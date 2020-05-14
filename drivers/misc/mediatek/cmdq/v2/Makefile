@@ -8,9 +8,7 @@ ccflags-y += -I$(srctree)/drivers/misc/mediatek/cmdq/v2/$(MTK_PLATFORM) \
 # Enable MET
 ccflags-y += -DMET_USER_EVENT_SUPPORT
 
-ifneq ($(TARGET_BUILD_VARIANT),eng)
 ccflags-y += -D_MTK_USER_
-endif
 
 # Common Clock Framework
 ifneq ($(CONFIG_MTK_CLKMGR),y)
